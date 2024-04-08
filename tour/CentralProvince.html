@@ -1,0 +1,2695 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title> ExplorExpress - Central Province </title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Style for Dark mode & light mode button -->
+    <style>
+        /* Default styles (light mode) */
+        body {
+            background-color: #f8f9fa;
+            /* Light background color */
+            color: #000000;
+            /* Dark text color */
+        }
+
+        /* Dark mode styles */
+        body.dark-mode {
+            background-color: #343a40;
+            /* Dark background color */
+            color: #a0a0a0;
+            /* Light text color */
+        }
+
+        .container.dark-mode {
+            background-color: #272727;
+            /* Dark container background color */
+            color: #f8f9fa;
+            /* Light text color in containers */
+        }
+
+        /* Styles for the button icons */
+        #toggleModeBtn,
+        #notificationBtn {
+            color: #7AB730;
+            /* Light mode button color */
+
+        }
+
+        #toggleModeBtn.dark-mode,
+        #notificationBtn.dark-mode {
+            color: #2f5501;
+            /* Dark mode button color */
+        }
+    </style>
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Topbar Starting point -->
+    <div class="container-fluid bg-light pt-3 d-none d-lg-block">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 text-center text-lg-left mb-2 mb-lg-0">
+                    <div class="d-inline-flex align-items-center">
+                        <p><i class="fa fa-envelope mr-2"></i> ExplorExpress@gmail.com</p>
+                        <p class="text-body px-3">|</p>
+                        <p><i class="fa fa-phone-alt mr-2"></i>0762076399</p>
+
+                        <!-- Dark mode & light mode button -->
+                        <button id="toggleModeBtn" onclick="toggleDarkMode()" class="btn btn-link"
+                            style="height: 5vh; padding-bottom: 55px; padding-left: 30px; box-shadow: none;">
+                            <i id="lightIcon" class="fas fa-sun fa-2x"></i> <!-- Sun icon for light mode -->
+                            <i id="darkIcon" class="fas fa-moon fa-2x" style="display: none;"></i>
+                            <!-- Moon icon for dark mode -->
+                        </button>
+
+                        <!-- Notification button -->
+                        <button id="notificationBtn" class="btn btn-link"
+                            style="height: 5vh; box-shadow: none; padding-bottom: 55px">
+                            <i class="fas fa-bell fa-2x"></i>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center text-lg-right">
+                    <div class="d-inline-flex align-items-center">
+                        <a class="text-primary px-3" href="">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a class="text-primary px-3" href="">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a class="text-primary px-3" href="">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a class="text-primary px-3" href="">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a class="text-primary pl-3" href="">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <div class="col-lg-2 text-center text-lg-right">
+                            <a href="#" class="btn btn-primary mr-2" style="height: 40px; width: 100px; border-radius: 20px;
+              overflow: hidden;">Sign In</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar Ending point-->
+
+
+    <!-- Navigation bar Start point -->
+    <div class="container-fluid position-relative nav-bar p-0">
+        <div class="container-lg position-relative p-0 px-lg-3" style="z-index: 9;">
+            <nav class="navbar navbar-expand-lg bg-light navbar-light shadow-lg py-3 py-lg-0 pl-3 pl-lg-5">
+                <a href="index.html" class="navbar-brand">
+                    <h1 class="m-0 text-primary"><span class="text-dark">Explor</span>Express</h1>
+                </a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
+                    <div class="navbar-nav ml-auto py-0">
+                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="service.html" class="nav-item nav-link">Services</a>
+                        <a href="package.html" class="nav-item nav-link">Tour Packages</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
+                            <div class="dropdown-menu border-0 rounded-0 m-0">
+                                <a href="blog.html" class="dropdown-item">Blog Grid</a>
+                                <a href="single.html" class="dropdown-item">Blog Detail</a>
+                                <a href="destination.html" class="dropdown-item">Destination</a>
+                            </div>
+                        </div>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navigation bar End point -->
+
+    <!-- Header Start -->
+    <div class="container-fluid page-header">
+        <div class="container">
+            <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 400px">
+                <h3 class="display-4 text-white text-uppercase">Central Province</h3>
+                <div class="d-inline-flex text-white">
+                    <p class="m-0 text-uppercase"><a class="text-white" href="">Home</a></p>
+                    <i class="fa fa-angle-double-right pt-1 px-3"></i>
+                    <p class="m-0 text-uppercase">DESTINATION</p>
+                    <i class="fa fa-angle-double-right pt-1 px-3"></i>
+                    <p class="m-0 text-uppercase">Central Province</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+
+    <!-- Booking Start Point -->
+    <div class="container-fluid booking mt-5 pb-5">
+        <div class="container pb-5">
+            <div class="bg-light shadow" style="padding: 30px; border: 2px solid #549900;">
+                <div class="row align-items-center" style="min-height: 60px;">
+                    <div class="col-md-10">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="mb-3 mb-md-0">
+                                    <select class="custom-select px-4" style="height: 47px;">
+                                        <option selected>Destination</option>
+                                        <option value="1">Central Province</option>
+                                        <option value="2">Eastern Province</option>
+                                        <option value="3">North Central Province</option>
+                                        <option value="4">Northern Province</option>
+                                        <option value="5">North Western Province</option>
+                                        <option value="6">Sabaragamuwa Province</option>
+                                        <option value="7">Southern Province</option>
+                                        <option value="8">Uva Province</option>
+                                        <option value="9">Western Province</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="mb-3 mb-md-0">
+                                    <div class="date" id="date1" data-target-input="nearest">
+                                        <input type="text" class="form-control p-4 datetimepicker-input"
+                                            placeholder="Depart Date" data-target="#date1"
+                                            data-toggle="datetimepicker" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="mb-3 mb-md-0">
+                                    <div class="date" id="date2" data-target-input="nearest">
+                                        <input type="text" class="form-control p-4 datetimepicker-input"
+                                            placeholder="Return Date" data-target="#date2"
+                                            data-toggle="datetimepicker" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="mb-3 mb-md-0">
+                                    <select class="custom-select px-4" style="height: 47px;">
+                                        <option selected>Duration</option>
+                                        <option value="1">2 Days</option>
+                                        <option value="2">5 Days</option>
+                                        <option value="3">7 Days</option>
+                                        <option value="4">More Days</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <button class="btn btn-primary btn-block" type="submit"
+                            style="height: 47px; margin-top: -2px;">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Booking Ending Point  -->
+
+    <!-- Destination Details Starting Point -->
+
+    <body>
+        <div class="gallery-container" style="padding-bottom: 40px;">
+            <div class="gallery">
+                <div class="gallery-item">
+                    <div class="destination-item position-relative overflow-hidden mb-2">
+                        <img class="img-fluid" src="img/CenPro-1.jpg" alt="">
+                        <a class="destination-overlay text-white text-decoration-none"
+                            onclick="showDetails('Horton Plains')">
+                            <h5 class="text-white">Horton Plains</h5>
+                            <span>Central Province</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="destination-item position-relative overflow-hidden mb-2">
+                        <img class="img-fluid" src="img/CenPro-2.jpg" alt="">
+                        <a class="destination-overlay text-white text-decoration-none"
+                            onclick="showDetails('Dalada Maligawa')">
+                            <h5 class="text-white">Dalada Maligawa</h5>
+                            <span>Central Province</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="destination-item position-relative overflow-hidden mb-2">
+                        <img class="img-fluid" src="img/CenPro-3.jpg" alt="">
+                        <a class="destination-overlay text-white text-decoration-none"
+                            onclick="showDetails('Pidurangala Rock')">
+                            <h5 class="text-white">Pidurangala Rock</h5>
+                            <span>Central Province</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="destination-item position-relative overflow-hidden mb-2">
+                        <img class="img-fluid" src="img/CenPro-4.jpg" alt="">
+                        <a class="destination-overlay text-white text-decoration-none"
+                            onclick="showDetails('Ramboda Falls')">
+                            <h5 class="text-white">Ramboda Falls</h5>
+                            <span>Central Province</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="destination-item position-relative overflow-hidden mb-2">
+                        <img class="img-fluid" src="img/CenPro-5.jpg" alt="">
+                        <a class="destination-overlay text-white text-decoration-none"
+                            onclick="showDetails('Gregory Lake')">
+                            <h5 class="text-white">Gregory Lake</h5>
+                            <span>Central Province</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="destination-item position-relative overflow-hidden mb-2">
+                        <img class="img-fluid" src="img/CenPro-6.jpg" alt="">
+                        <a class="destination-overlay text-white text-decoration-none"
+                            onclick="showDetails('Knuckles Mountain Range')">
+                            <h5 class="text-white">Knuckles Mountain Range</h5>
+                            <span>Central Province</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="destination-item position-relative overflow-hidden mb-2">
+                        <img class="img-fluid" src="img/CenPro-7.jpg" alt="">
+                        <a class="destination-overlay text-white text-decoration-none"
+                            onclick="showDetails('Udawattekele Sanctuary')">
+                            <h5 class="text-white">Udawattekele Sanctuary</h5>
+                            <span>Central Province</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="destination-item position-relative overflow-hidden mb-2">
+                        <img class="img-fluid" src="img/CenPro-8.jpg" alt="">
+                        <a class="destination-overlay text-white text-decoration-none"
+                            onclick="showDetails('Ambuluwawa Tower')">
+                            <h5 class="text-white">Ambuluwawa Tower</h5>
+                            <span>Central Province</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="destination-item position-relative overflow-hidden mb-2">
+                        <img class="img-fluid" src="img/CenPro-9.jpg" alt="">
+                        <a class="destination-overlay text-white text-decoration-none"
+                            onclick="showDetails('Bomburu ella waterfalls')">
+                            <h5 class="text-white">Bomburu ella waterfalls</h5>
+                            <span>Central Province</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="destination-item position-relative overflow-hidden mb-2">
+                        <img class="img-fluid" src="img/CenPro-10.jpg" alt="">
+                        <a class="destination-overlay text-white text-decoration-none"
+                            onclick="showDetails('Aluviharaya rock cave temple')">
+                            <h5 class="text-white">Aluviharaya rock cave temple</h5>
+                            <span>Central Province</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <button class="prev-btn" onclick="moveGallery(-1)">&#10094;</button>
+            <button class="next-btn" onclick="moveGallery(1)">&#10095;</button>
+        </div>
+
+        <div class="container" style="border: 5px solid #7AB730; border-radius: 5dvh; margin-bottom: 30px;">
+            <div id="Horton Plains">
+                <h2 style="padding-left: 60px; padding-top: 40px;">Horton Plains</h2>
+                <p>
+                <h5 style="padding-left: 40px;">1. About Place?</h5>
+                <P style="text-align: justify; padding-left: 30px; padding-right: 30px;"> Horton Plains
+                    National Park is a protected area in the
+                    central highlands of Sri Lanka, known for its rich biodiversity and stunning landscapes. It is home
+                    to unique flora and fauna, including many
+                    endemi species. The park features vast grasslands, cloud forests, and montane ecosystems, along with
+                    several scenic attractions such as Baker's Falls and World's End.</P>
+
+                <h5 style="padding-left: 40px;">2. How to Travel?</h5>
+                <p style="text-align: justify; padding-left: 30px; padding-right: 30px;"> Horton Plains can be reached
+                    by road from various cities in Sri Lanka,
+                    such as Nuwara Eliya and Haputale. The nearest major town is Nuwara Eliya, which is approximately 32
+                    kilometers away.
+                    Visitors typically hire a vehicle or take a guided tour to reach the park entrance. From there,
+                    exploration
+                    within the park is mainly on foot.</p>
+
+                <h5 style="padding-left: 40px;">3. How Many Days Need?</h5>
+                <p style="text-align: justify; padding-left: 30px; padding-right: 30px;"> A visit to Horton Plains
+                    National Park can be done as a day trip from
+                    nearby towns like Nuwara Eliya or Haputale. However, to fully experience the beauty of the park and
+                    explore its trails, it's
+                    recommended to allocate at least half a day. This allows time for hiking, wildlife spotting, and
+                    enjoying the
+                    scenic viewpoints.</p>
+
+                <h5 style="padding-left: 40px;">4. How Much Money Need to Spend?</h5>
+                <p style="text-align: justify; padding-left: 30px; padding-right: 30px;"> The cost of visiting Horton
+                    Plains includes entrance fees to the
+                    national park, which may vary for local and foreign visitors. Additionally, expenses may include
+                    transportation to and from the park, guide
+                    fees if required, and any accommodation or meals if staying overnight in nearby towns. Prices can
+                    vary
+                    depending on the mode of transportation and choice of services.</p>
+                <ul>
+                    <li>Entrance Fee :- Around $25 per person for foreign tourists.</li>
+                    <li>Transportation :- Around $10 to $20 for round trip transportation.</li>
+                    <li>Guide Fees (Optional) :- Range from $10 to $20, depending on the duration </li>
+                    <li>Food and Refreshments :- Around $10 to $20 for meals and refreshments.</li>
+                    <li>Miscellaneous :- An additional $5 to $10 for miscellaneous expenses.</li>
+                </ul>
+                <p style="text-align: justify; padding-left: 30px; padding-right: 30px;">Overall, a conservative
+                    estimate for a day trip to Horton Plains National Park could range from $50 to
+                    $100 per person.</p>
+
+                <h5 style="padding-left: 40px;">5. How It Relates to Tourists?</h5>
+                <p style="text-align: justify; padding-left: 30px; padding-right: 30px; padding-bottom: 20px;"> Horton
+                    Plains is a popular destination among
+                    nature lovers, hikers, and outdoor enthusiasts. Tourists visit the park to experience its natural
+                    beauty, diverse ecosystems, and hiking trails. The park
+                    offers opportunities for birdwatching, wildlife photography, and enjoying panoramic views from
+                    viewpoints
+                    like World's End. It is also an important conservation area, attracting visitors interested in
+                    biodiversity and environmental conservation.</p>
+                </p>
+            </div>
+            <style>
+                .gallery-container {
+                    position: relative;
+                    width: 100%;
+                    overflow: hidden;
+                    padding-left: 10px;
+                }
+
+                .gallery {
+                    display: flex;
+                    transition: transform 0.5s ease;
+                }
+
+                .gallery-item {
+                    flex: 0 0 32%;
+                    /* Each photo takes up 33.33% of container width */
+                    padding: 20px;
+                    box-sizing: border-box;
+                    position: relative;
+                    overflow: hidden;
+                    cursor: pointer;
+                    transition: transform 0.3s ease;
+                    margin-right: 20px;
+                }
+
+                .gallery-item:hover {
+                    transform: scale(1.1);
+                }
+
+
+                .photo {
+                    width: 100%;
+                    cursor: pointer;
+                }
+
+                .prev-btn,
+                .next-btn {
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    background-color: rgba(0, 0, 0, 0.5);
+                    color: white;
+                    border: none;
+                    padding: 10px;
+                    cursor: pointer;
+                }
+
+                .prev-btn {
+                    left: 0;
+                }
+
+                .next-btn {
+                    right: 0;
+                }
+            </style>
+
+            <script>
+                let currentIndex = 0;
+                const gallery = document.querySelector('.gallery');
+                const galleryItems = document.querySelectorAll('.gallery-item');
+                const numItems = galleryItems.length;
+
+                function moveGallery(direction) {
+                    currentIndex = (currentIndex + direction + numItems) % numItems;
+                    const newPosition = -currentIndex * galleryItems[0].offsetWidth;
+                    gallery.style.transform = `translateX(${newPosition}px)`;
+                }
+
+
+                function showDetails(place) {
+                    // Scroll to the description section
+                    document.getElementById(place).scrollIntoView({ behavior: 'smooth' });
+                }
+            </script>
+            <div>
+                <button id="toggleGalleryBtn" onclick="toggleGallery()" style="margin-left: 40px; margin-bottom: 30px;">
+                    <i class="fas fa-images"></i> <!-- Add your icon here -->
+                </button>
+
+                <div id="galleryContainer1" class="gallery-container1">
+                    <div class="gallery1">
+                        <div class="row">
+                            <div class="column">
+                                <img src="img/HortonPlains-1.jpg" alt="Image 1">
+                            </div>
+                            <div class="column">
+                                <img src="img/HortonPlains-2.jpg" alt="Image 2">
+                            </div>
+                            <div class="column">
+                                <img src="img/HortonPlains-3.jpg" alt="Image 3">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="column">
+                                <img src="img/HortonPlains-4.jpg" alt="Image 4">
+                            </div>
+                            <div class="column">
+                                <img src="img/HortonPlains-5.jpg" alt="Image 5">
+                            </div>
+                            <div class="column">
+                                <img src="img/HortonPlains-6.jpg" alt="Image 6">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="column">
+                                <img src="img/HortonPlains-7.jpg" alt="Image 4">
+                            </div>
+                            <div class="column">
+                                <img src="img/HortonPlains-8.jpg" alt="Image 5">
+                            </div>
+                            <div class="column">
+                                <img src="img/HortonPlains-9.jpg" alt="Image 6">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <style>
+                    .gallery1 {
+                        display: flex;
+                        justify-content: center;
+                        flex-wrap: wrap;
+                        max-width: 900px;
+                        margin-left: 100px;
+                        margin-bottom: 30px;
+                    }
+
+                    .row {
+                        display: flex;
+                        justify-content: center;
+                        width: 100%;
+                    }
+
+                    .column {
+                        flex: 0 0 calc(33.33% - 20px);
+                        margin: 10px;
+                    }
+
+                    .column img {
+                        width: 100%;
+                        height: auto;
+                    }
+
+                    .gallery-container1 {
+                        display: none;
+                    }
+                </style>
+                <script>
+                    function toggleGallery() {
+                        var galleryContainer = document.getElementById("galleryContainer1");
+                        var toggleBtn = document.getElementById("toggleGalleryBtn");
+
+                        if (galleryContainer.style.display === "none") {
+                            galleryContainer.style.display = "block";
+                        } else {
+                            galleryContainer.style.display = "none";
+                        }
+                    }
+                </script>
+            </div>
+        </div>
+
+        <div class="container" style="border: 5px solid #7AB730; border-radius: 5dvh; margin-bottom: 30px;">
+            <div id="Dalada Maligawa">
+                <h2 style="padding-left: 60px; padding-top: 40px;">Dalada Maligawa (Temple of the Sacred Tooth Relic)
+                </h2>
+                <p>
+                <h5 style="padding-left: 40px;">1. About Place?</h5>
+                <P style="text-align: justify; padding-left: 30px; padding-right: 30px;"> Dalada Maligawa, also known as
+                    the Temple of the Sacred Tooth Relic, is a revered Buddhist temple located in the city of Kandy, Sri
+                    Lanka. It houses the sacred tooth relic of the Buddha, which is believed to be a significant
+                    spiritual and cultural symbol for Buddhists around the world. The temple complex includes shrines,
+                    museums, and pavilions, surrounded by beautiful gardens and architectural marvels.</P>
+
+                <h5 style="padding-left: 40px;">2. How to Travel?</h5>
+                <p style="text-align: justify; padding-left: 30px; padding-right: 30px;"> Dalada Maligawa is situated in
+                    the heart of Kandy, making it easily accessible from various parts of the country. Visitors can
+                    reach Kandy by train, bus, or private vehicle from major cities like Colombo or Nuwara Eliya. From
+                    the city center of Kandy, the temple is within walking distance or a short tuk-tuk ride away.</p>
+
+                <h5 style="padding-left: 40px;">3. How Many Days Need?</h5>
+                <p style="text-align: justify; padding-left: 30px; padding-right: 30px;"> A visit to Dalada Maligawa can
+                    be completed within a few hours, making it suitable for a half-day excursion. However, to fully
+                    appreciate the spiritual significance and historical importance of the temple, visitors may choose
+                    to spend additional time exploring the surrounding area, attending religious ceremonies, or learning
+                    about the rich cultural heritage of Kandy.</p>
+
+                <h5 style="padding-left: 40px;">4. How Much Money Need to Spend?</h5>
+                <p style="text-align: justify; padding-left: 30px; padding-right: 30px;"> The cost of visiting Dalada
+                    Maligawa primarily includes entrance fees, which may vary for local and foreign visitors.
+                    Additionally, expenses may include transportation to Kandy, donations to the temple, and optional
+                    guided tours. Prices for entrance fees and guided tours are reasonable, with discounts available for
+                    students and groups. </p>
+                <ul>
+                    <li>Entrance Fee :- Approximately $5 to $10 for foreign tourists.</li>
+                    <li>Transportation :- Varies depending on the mode of transport and distance traveled.</li>
+                    <li>Guide Fees (Optional) :- Around $5 to $10 per person, depending on the duration and services
+                        provided. </li>
+                    <li>Food and Refreshments :- Additional expenses for meals and refreshments if desired.</li>
+                    <li>Miscellaneous :- Any additional purchases or expenses during the visit.</li>
+                </ul>
+                <p style="text-align: justify; padding-left: 30px; padding-right: 30px;">Overall, a conservative
+                    estimate for a visit to Dalada Maligawa could range from $10 to $20 per
+                    person, excluding transportation costs.</p>
+
+                <h5 style="padding-left: 40px;">5. How It Relates to Tourists?</h5>
+                <p style="text-align: justify; padding-left: 30px; padding-right: 30px; padding-bottom: 20px;"> Dalada
+                    Maligawa is one of the most sacred and iconic landmarks in Sri Lanka, attracting tourists, pilgrims,
+                    and history enthusiasts from around the globe. Tourists visit the temple to witness its
+                    architectural beauty, learn about Buddhist traditions, and pay homage to the sacred tooth relic. The
+                    temple complex offers a serene atmosphere for meditation and reflection, as well as opportunities to
+                    observe religious rituals and cultural ceremonies. Additionally, Dalada Maligawa is an integral part
+                    of Kandy's UNESCO World Heritage Site, contributing to the city's cultural and spiritual
+                    significance.</p>
+                </p>
+            </div>
+            <style>
+                .gallery-container {
+                    position: relative;
+                    width: 100%;
+                    overflow: hidden;
+                    padding-left: 10px;
+                }
+
+                .gallery {
+                    display: flex;
+                    transition: transform 0.5s ease;
+                }
+
+                .gallery-item {
+                    flex: 0 0 32%;
+                    /* Each photo takes up 33.33% of container width */
+                    padding: 20px;
+                    box-sizing: border-box;
+                    position: relative;
+                    overflow: hidden;
+                    cursor: pointer;
+                    transition: transform 0.3s ease;
+                    margin-right: 20px;
+                }
+
+                .gallery-item:hover {
+                    transform: scale(1.1);
+                }
+
+
+                .photo {
+                    width: 100%;
+                    cursor: pointer;
+                }
+
+                .prev-btn,
+                .next-btn {
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    background-color: rgba(0, 0, 0, 0.5);
+                    color: white;
+                    border: none;
+                    padding: 10px;
+                    cursor: pointer;
+                }
+
+                .prev-btn {
+                    left: 0;
+                }
+
+                .next-btn {
+                    right: 0;
+                }
+            </style>
+
+            <script>
+                let currentIndex = 0;
+                const gallery = document.querySelector('.gallery');
+                const galleryItems = document.querySelectorAll('.gallery-item');
+                const numItems = galleryItems.length;
+
+                function moveGallery(direction) {
+                    currentIndex = (currentIndex + direction + numItems) % numItems;
+                    const newPosition = -currentIndex * galleryItems[0].offsetWidth;
+                    gallery.style.transform = `translateX(${newPosition}px)`;
+                }
+
+
+                function showDetails(place) {
+                    // Scroll to the description section
+                    document.getElementById(place).scrollIntoView({ behavior: 'smooth' });
+                }
+            </script>
+            <div>
+                <button id="toggleGalleryBtn" onclick="toggleGallery2()"
+                    style="margin-left: 40px; margin-bottom: 30px;">
+                    <i class="fas fa-images"></i>
+                </button>
+
+                <div id="galleryContainer2" class="gallery-container2">
+                    <div class="gallery1">
+                        <div class="row">
+                            <div class="column">
+                                <img src="img/Dalada Maligawa-1.jpg" alt="Image 1">
+                            </div>
+                            <div class="column">
+                                <img src="img/Dalada Maligawa-2.jpg" alt="Image 2">
+                            </div>
+                            <div class="column">
+                                <img src="img/Dalada Maligawa-3.jpg" alt="Image 3">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="column">
+                                <img src="img/Dalada Maligawa-4.jpg" alt="Image 4">
+                            </div>
+                            <div class="column">
+                                <img src="img/Dalada Maligawa-5.jpg" alt="Image 5">
+                            </div>
+                            <div class="column">
+                                <img src="img/Dalada Maligawa-6.jpg" alt="Image 6">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="column">
+                                <img src="img/Dalada Maligawa-7.jpg" alt="Image 4">
+                            </div>
+                            <div class="column">
+                                <img src="img/Dalada Maligawa-8.jpg" alt="Image 5">
+                            </div>
+                            <div class="column">
+                                <img src="img/Dalada Maligawa-9.jpg" alt="Image 6">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <style>
+                    .gallery1 {
+                        display: flex;
+                        justify-content: center;
+                        flex-wrap: wrap;
+                        max-width: 900px;
+                        margin-left: 100px;
+                        margin-bottom: 30px;
+                    }
+
+                    .row {
+                        display: flex;
+                        justify-content: center;
+                        width: 100%;
+                    }
+
+                    .column {
+                        flex: 0 0 calc(33.33% - 20px);
+                        margin: 10px;
+                    }
+
+                    .column img {
+                        width: 100%;
+                        height: auto;
+                    }
+
+                    .gallery-container2 {
+                        display: none;
+                    }
+                </style>
+                <script>
+                    function toggleGallery2() {
+                        var galleryContainer = document.getElementById("galleryContainer2");
+                        var toggleBtn = document.getElementById("toggleGalleryBtn2");
+
+                        if (galleryContainer.style.display === "none") {
+                            galleryContainer.style.display = "block";
+                        } else {
+                            galleryContainer.style.display = "none";
+                        }
+                    }
+                </script>
+            </div>
+        </div>
+
+        <div class="container" style="border: 5px solid #7AB730; border-radius: 5dvh; margin-bottom: 30px;">
+            <div id="Pidurangala Rock">
+                <h2 style="padding-left: 60px; padding-top: 40px;">Pidurangala Rock </h2>
+                <p>
+                <h5 style="padding-left: 40px;">1. About Place?</h5>
+                <P style="text-align: justify; padding-left: 30px; padding-right: 30px;"> Pidurangala Rock is a
+                    prominent geological formation located near Sigiriya in the Matale District of Sri Lanka. It offers
+                    panoramic views of the surrounding landscape and is renowned for its historical and archaeological
+                    significance. While overshadowed by the nearby Sigiriya Rock Fortress, Pidurangala offers a unique
+                    perspective and attracts visitors interested in adventure, nature, and cultural exploration.</P>
+
+                <h5 style="padding-left: 40px;">2. How to Travel?</h5>
+                <p style="text-align: justify; padding-left: 30px; padding-right: 30px;"> Pidurangala Rock is accessible
+                    from the town of Sigiriya, which serves as a base for exploring the area. Visitors can reach
+                    Sigiriya by bus, car, or organized tour from major cities like Colombo, Kandy, or Dambulla. From
+                    Sigiriya, it's a short drive or tuk-tuk ride to the base of Pidurangala Rock, followed by a hike to
+                    reach the summit.</p>
+
+                <h5 style="padding-left: 40px;">3. How Many Days Need?</h5>
+                <p style="text-align: justify; padding-left: 30px; padding-right: 30px;"> A visit to Pidurangala Rock
+                    can typically be completed within a few hours, including the hike to the top and time spent
+                    exploring the surroundings. However, for a more leisurely experience or to capture the sunrise or
+                    sunset views, visitors may choose to allocate additional time. Depending on individual preferences
+                    and interests, a half-day excursion is usually sufficient to appreciate the beauty and historical
+                    significance of Pidurangala Rock.</p>
+
+                <h5 style="padding-left: 40px;">4. How Much Money Need to Spend?</h5>
+                <p style="text-align: justify; padding-left: 30px; padding-right: 30px;"> The cost of visiting
+                    Pidurangala Rock is relatively low, primarily consisting of entrance fees and transportation
+                    expenses. Entrance fees are nominal, typically ranging from $3 to $5 per person. Additional expenses
+                    may include transportation to Sigiriya, guide fees if desired, and any purchases or refreshments
+                    during the visit. Overall, a visit to Pidurangala Rock is budget-friendly, making it accessible to a
+                    wide range of travelers.</p>
+                <ul>
+                    <li>Entrance Fee :- Approximately $3 to $5 per person.</li>
+                    <li>Transportation :- Varies depending on the mode of transport and distance traveled.</li>
+                    <li>Guide Fees (Optional) :- Around $5 to $10 per person, depending on the duration and services
+                        provided. </li>
+                    <li>Food and Refreshments :- Additional expenses for meals and refreshments if desired.</li>
+                    <li>Miscellaneous :- Any additional purchases or expenses during the visit.</li>
+                </ul>
+                <p style="text-align: justify; padding-left: 30px; padding-right: 30px;">Overall, a conservative
+                    estimate for a visit to Pidurangala Rock could range from $10 to $20 per
+                    person, excluding transportation costs.</p>
+
+                <h5 style="padding-left: 40px;">5. How It Relates to Tourists?</h5>
+                <p style="text-align: justify; padding-left: 30px; padding-right: 30px; padding-bottom: 20px;">
+                    Pidurangala Rock offers a captivating experience for tourists seeking adventure, cultural
+                    exploration, and breathtaking views. The hike to the summit provides opportunities for outdoor
+                    enthusiasts to challenge themselves while enjoying the natural beauty of the surroundings.
+                    Additionally, Pidurangala's proximity to the iconic Sigiriya Rock Fortress makes it an ideal
+                    complement to the Sigiriya experience. Tourists often visit Pidurangala to capture stunning
+                    photographs, witness sunrise or sunset vistas, and immerse themselves in the rich history and
+                    heritage of the region.</p>
+                </p>
+            </div>
+            <style>
+                .gallery-container {
+                    position: relative;
+                    width: 100%;
+                    overflow: hidden;
+                    padding-left: 10px;
+                }
+
+                .gallery {
+                    display: flex;
+                    transition: transform 0.5s ease;
+                }
+
+                .gallery-item {
+                    flex: 0 0 32%;
+                    /* Each photo takes up 33.33% of container width */
+                    padding: 20px;
+                    box-sizing: border-box;
+                    position: relative;
+                    overflow: hidden;
+                    cursor: pointer;
+                    transition: transform 0.3s ease;
+                    margin-right: 20px;
+                }
+
+                .gallery-item:hover {
+                    transform: scale(1.1);
+                }
+
+
+                .photo {
+                    width: 100%;
+                    cursor: pointer;
+                }
+
+                .prev-btn,
+                .next-btn {
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    background-color: rgba(0, 0, 0, 0.5);
+                    color: white;
+                    border: none;
+                    padding: 10px;
+                    cursor: pointer;
+                }
+
+                .prev-btn {
+                    left: 0;
+                }
+
+                .next-btn {
+                    right: 0;
+                }
+            </style>
+
+            <script>
+                let currentIndex = 0;
+                const gallery = document.querySelector('.gallery');
+                const galleryItems = document.querySelectorAll('.gallery-item');
+                const numItems = galleryItems.length;
+
+                function moveGallery(direction) {
+                    currentIndex = (currentIndex + direction + numItems) % numItems;
+                    const newPosition = -currentIndex * galleryItems[0].offsetWidth;
+                    gallery.style.transform = `translateX(${newPosition}px)`;
+                }
+
+
+                function showDetails(place) {
+                    // Scroll to the description section
+                    document.getElementById(place).scrollIntoView({ behavior: 'smooth' });
+                }
+            </script>
+            <div>
+                <button id="toggleGalleryBtn" onclick="toggleGallery3()"
+                    style="margin-left: 40px; margin-bottom: 30px;">
+                    <i class="fas fa-images"></i>
+                </button>
+
+                <div id="galleryContainer3" class="gallery-container3">
+                    <div class="gallery1">
+                        <div class="row">
+                            <div class="column">
+                                <img src="img/Pidurangala Rock-1.jpg" alt="Image 1">
+                            </div>
+                            <div class="column">
+                                <img src="img/Pidurangala Rock-2.jpg" alt="Image 2">
+                            </div>
+                            <div class="column">
+                                <img src="img/Pidurangala Rock-3.jpg" alt="Image 3">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="column">
+                                <img src="img/Pidurangala Rock-4.jpg" alt="Image 4">
+                            </div>
+                            <div class="column">
+                                <img src="img/Pidurangala Rock-5.jpg" alt="Image 5">
+                            </div>
+                            <div class="column">
+                                <img src="img/Pidurangala Rock-6.jpg" alt="Image 6">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="column">
+                                <img src="img/Pidurangala Rock-7.jpg" alt="Image 7">
+                            </div>
+                            <div class="column">
+                                <img src="img/Pidurangala Rock-8.jpg" alt="Image 8">
+                            </div>
+                            <div class="column">
+                                <img src="img/Pidurangala Rock-9.jpg" alt="Image 9">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <style>
+                    .gallery1 {
+                        display: flex;
+                        justify-content: center;
+                        flex-wrap: wrap;
+                        max-width: 900px;
+                        margin-left: 100px;
+                        margin-bottom: 30px;
+                    }
+
+                    .row {
+                        display: flex;
+                        justify-content: center;
+                        width: 100%;
+                    }
+
+                    .column {
+                        flex: 0 0 calc(33.33% - 20px);
+                        margin: 10px;
+                    }
+
+                    .column img {
+                        width: 100%;
+                        height: auto;
+                    }
+
+                    .gallery-container3 {
+                        display: none;
+                    }
+                </style>
+                <script>
+                    function toggleGallery3() {
+                        var galleryContainer = document.getElementById("galleryContainer3");
+                        var toggleBtn = document.getElementById("toggleGalleryBtn3");
+
+                        if (galleryContainer.style.display === "none") {
+                            galleryContainer.style.display = "block";
+                        } else {
+                            galleryContainer.style.display = "none";
+                        }
+                    }
+                </script>
+            </div>
+        </div>
+
+        <div class="container" style="border: 5px solid #7AB730; border-radius: 5dvh; margin-bottom: 30px;">
+            <div id="Ramboda Falls">
+                <h2 style="padding-left: 60px; padding-top: 40px;">Ramboda Falls</h2>
+                <p>
+                <h5 style="padding-left: 40px;">1. About Place?</h5>
+                <P style="text-align: justify; padding-left: 30px; padding-right: 30px;"> Ramboda Falls is a majestic
+                    waterfall located in the central highlands of Sri Lanka, near the town of Pussellawa in the Nuwara
+                    Eliya District. It is one of the highest waterfalls in the country, cascading from an altitude of
+                    approximately 945 meters (3,100 feet). Surrounded by lush greenery and tea plantations, Ramboda
+                    Falls offers a serene and picturesque setting for visitors to enjoy.</P>
+
+                <h5 style="padding-left: 40px;">2. How to Travel?</h5>
+                <p style="text-align: justify; padding-left: 30px; padding-right: 30px;"> Ramboda Falls is accessible
+                    from several major cities and tourist destinations in Sri Lanka. Visitors can travel to the nearby
+                    town of Nuwara Eliya by bus, car, or train from locations like Colombo, Kandy, or Ella. From Nuwara
+                    Eliya, it's a short drive or tuk-tuk ride to reach Ramboda Falls. The waterfall is located along the
+                    A5 highway, making it easily accessible by road.</p>
+
+                <h5 style="padding-left: 40px;">3. How Many Days Need?</h5>
+                <p style="text-align: justify; padding-left: 30px; padding-right: 30px;">A visit to Ramboda Falls can be
+                    completed within a few hours, allowing visitors to admire the waterfall, take photographs, and soak
+                    in the natural beauty of the surroundings. However, for those interested in exploring the area
+                    further or enjoying a picnic by the waterfall, allocating additional time may be desirable.
+                    Depending on preferences and activities planned, a half-day excursion is typically sufficient to
+                    experience the splendor of Ramboda Falls.</p>
+
+                <h5 style="padding-left: 40px;">4. How Much Money Need to Spend?</h5>
+                <p style="text-align: justify; padding-left: 30px; padding-right: 30px;"> Similar to Pidurangala Rock,
+                    the cost of visiting Ramboda Falls is relatively low, mainly consisting of entrance fees and
+                    transportation expenses. Entrance fees are minimal, usually ranging from $1 to $2 per person.
+                    Additional expenses may include transportation to Nuwara Eliya, guide fees if desired, and any
+                    purchases or refreshments during the visit. Overall, a visit to Ramboda Falls is affordable, making
+                    it accessible to travelers on various budgets.</p>
+                <ul>
+                    <li>Entrance Fee: Approximately $1 to $2 per person.</li>
+                    <li>Transportation: Varies depending on the mode of transport and distance traveled.</li>
+                    <li>Guide Fees (Optional): Around $5 to $10 per person, depending on the duration and services
+                        provided.</li>
+                    <li>Food and Refreshments: Additional expenses for meals and refreshments if desired.</li>
+                    <li> Miscellaneous: Any additional purchases or expenses during the visit.</li>
+                </ul>
+                <p style="text-align: justify; padding-left: 30px; padding-right: 30px;">Overall, a conservative
+                    estimate for a visit to Ramboda Falls could range from $5 to $15 per person,
+                    excluding transportation costs.</p>
+
+                <h5 style="padding-left: 40px;">5. How It Relates to Tourists?</h5>
+                <p style="text-align: justify; padding-left: 30px; padding-right: 30px; padding-bottom: 20px;">
+                    Ramboda Falls offers a captivating experience for tourists seeking natural beauty and tranquility in
+                    Sri Lanka's central highlands. The waterfall's impressive height and scenic surroundings make it a
+                    popular stop for travelers exploring the region. Visitors often marvel at the cascading waters of
+                    Ramboda Falls, take photographs, and enjoy the peaceful ambiance created by the sound of rushing
+                    water and the lush greenery. Additionally, Ramboda Falls serves as a refreshing break for tourists
+                    traveling between major destinations like Colombo, Kandy, and Ella, allowing them to immerse
+                    themselves in the pristine beauty of Sri Lanka's landscape.</p>
+                </p>
+            </div>
+            <style>
+                .gallery-container {
+                    position: relative;
+                    width: 100%;
+                    overflow: hidden;
+                    padding-left: 10px;
+                }
+
+                .gallery {
+                    display: flex;
+                    transition: transform 0.5s ease;
+                }
+
+                .gallery-item {
+                    flex: 0 0 32%;
+                    /* Each photo takes up 33.33% of container width */
+                    padding: 20px;
+                    box-sizing: border-box;
+                    position: relative;
+                    overflow: hidden;
+                    cursor: pointer;
+                    transition: transform 0.3s ease;
+                    margin-right: 20px;
+                }
+
+                .gallery-item:hover {
+                    transform: scale(1.1);
+                }
+
+
+                .photo {
+                    width: 100%;
+                    cursor: pointer;
+                }
+
+                .prev-btn,
+                .next-btn {
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    background-color: rgba(0, 0, 0, 0.5);
+                    color: white;
+                    border: none;
+                    padding: 10px;
+                    cursor: pointer;
+                }
+
+                .prev-btn {
+                    left: 0;
+                }
+
+                .next-btn {
+                    right: 0;
+                }
+            </style>
+
+            <script>
+                let currentIndex = 0;
+                const gallery = document.querySelector('.gallery');
+                const galleryItems = document.querySelectorAll('.gallery-item');
+                const numItems = galleryItems.length;
+
+                function moveGallery(direction) {
+                    currentIndex = (currentIndex + direction + numItems) % numItems;
+                    const newPosition = -currentIndex * galleryItems[0].offsetWidth;
+                    gallery.style.transform = `translateX(${newPosition}px)`;
+                }
+
+
+                function showDetails(place) {
+                    // Scroll to the description section
+                    document.getElementById(place).scrollIntoView({ behavior: 'smooth' });
+                }
+            </script>
+            <div>
+                <button id="toggleGalleryBtn4" onclick="toggleGallery4()"
+                    style="margin-left: 40px; margin-bottom: 30px;">
+                    <i class="fas fa-images"></i>
+                </button>
+
+                <div id="galleryContainer4" class="gallery-container4">
+                    <div class="gallery1">
+                        <div class="row">
+                            <div class="column">
+                                <img src="img/Ramboda Falls-1.jpg" alt="Image 1">
+                            </div>
+                            <div class="column">
+                                <img src="img/Ramboda Falls-2.jpg" alt="Image 2">
+                            </div>
+                            <div class="column">
+                                <img src="img/Ramboda Falls-3.jpg" alt="Image 3">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="column">
+                                <img src="img/Ramboda Falls-4.jpg" alt="Image 4">
+                            </div>
+                            <div class="column">
+                                <img src="img/Ramboda Falls-5.jpg" alt="Image 5">
+                            </div>
+                            <div class="column">
+                                <img src="img/Ramboda Falls-6.jpg" alt="Image 6">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="column">
+                                <img src="img/Ramboda Falls-7.jpg" alt="Image 4">
+                            </div>
+                            <div class="column">
+                                <img src="img/Ramboda Falls-8.jpg" alt="Image 5">
+                            </div>
+                            <div class="column">
+                                <img src="img/Ramboda Falls-9.jpg" alt="Image 6">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <style>
+                    .gallery1 {
+                        display: flex;
+                        justify-content: center;
+                        flex-wrap: wrap;
+                        max-width: 900px;
+                        margin-left: 100px;
+                        margin-bottom: 30px;
+                    }
+
+                    .row {
+                        display: flex;
+                        justify-content: center;
+                        width: 100%;
+                    }
+
+                    .column {
+                        flex: 0 0 calc(33.33% - 20px);
+                        margin: 10px;
+                    }
+
+                    .column img {
+                        width: 100%;
+                        height: auto;
+                    }
+
+                    .gallery-container4 {
+                        display: none;
+                    }
+                </style>
+                <script>
+                    function toggleGallery4() {
+                        var galleryContainer = document.getElementById("galleryContainer4");
+                        var toggleBtn = document.getElementById("toggleGalleryBtn4");
+
+                        if (galleryContainer.style.display === "none") {
+                            galleryContainer.style.display = "block";
+                        } else {
+                            galleryContainer.style.display = "none";
+                        }
+                    }
+                </script>
+            </div>
+        </div>
+
+        <div class="container" style="border: 5px solid #7AB730; border-radius: 5dvh; margin-bottom: 30px;">
+            <div id="Gregory Lake">
+                <h2 style="padding-left: 60px; padding-top: 40px;">Gregory Lake</h2>
+                <p>
+                <h5 style="padding-left: 40px;">1. About Place?</h5>
+                <P style="text-align: justify; padding-left: 30px; padding-right: 30px;"> Gregory Lake is a picturesque
+                    reservoir located in the heart of Nuwara Eliya, a charming town nestled in the central highlands of
+                    Sri Lanka. Built during the British colonial period, Gregory Lake is surrounded by lush greenery and
+                    offers stunning views of the surrounding hills. It serves as a popular recreational spot for both
+                    locals and tourists, providing opportunities for boating, picnicking, and enjoying leisurely strolls
+                    along its scenic shores.</P>
+
+                <h5 style="padding-left: 40px;">2. How to Travel?</h5>
+                <p style="text-align: justify; padding-left: 30px; padding-right: 30px;"> Gregory Lake is easily
+                    accessible from various major cities and tourist destinations in Sri Lanka. Visitors can travel to
+                    Nuwara Eliya by bus, car, or train from locations like Colombo, Kandy, or Ella. Once in Nuwara
+                    Eliya, Gregory Lake is within walking distance from the town center, making it convenient for
+                    visitors to reach.</p>
+
+                <h5 style="padding-left: 40px;">3. How Many Days Need?</h5>
+                <p style="text-align: justify; padding-left: 30px; padding-right: 30px;">A visit to Gregory Lake can be
+                    enjoyed within a few hours, allowing visitors to partake in activities such as boating, exploring
+                    the lakeside parks, or simply relaxing amidst the tranquil surroundings. However, those interested
+                    in fully experiencing the charm of Nuwara Eliya may choose to spend additional time exploring other
+                    nearby attractions, such as tea plantations or the Hakgala Botanical Garden. Depending on
+                    preferences, a half-day excursion to Gregory Lake is usually sufficient to appreciate its beauty and
+                    recreational offerings.</p>
+
+                <h5 style="padding-left: 40px;">4. How Much Money Need to Spend?</h5>
+                <p style="text-align: justify; padding-left: 30px; padding-right: 30px;"> The cost of visiting Gregory
+                    Lake is relatively low, primarily comprising entrance fees for specific activities and
+                    transportation expenses. Entrance fees for boating or other recreational activities at the lake are
+                    nominal, typically ranging from $1 to $5 per person, depending on the chosen activity and duration.
+                    Additional expenses may include transportation to Nuwara Eliya, guide fees if desired, and any
+                    purchases or refreshments during the visit. Overall, a visit to Gregory Lake offers an affordable
+                    recreational experience suitable for travelers on various budgets.</p>
+                <ul>
+                    <li>Entrance Fee: Approximately $1 to $5 per person, depending on the chosen activity.</li>
+                    <li>Transportation: Varies depending on the mode of transport and distance traveled.</li>
+                    <li>Guide Fees (Optional): Around $5 to $10 per person, depending on the duration and services
+                        provided.</li>
+                    <li>Food and Refreshments: Additional expenses for meals and refreshments if desired.</li>
+                    <li>Miscellaneous: Any additional purchases or expenses during the visit.</li>
+                </ul>
+                <p style="text-align: justify; padding-left: 30px; padding-right: 30px;">Overall, a conservative
+                    estimate for a visit to Gregory Lake could range from $5 to $20 per person,
+                    excluding transportation costs.</p>
+
+                <h5 style="padding-left: 40px;">5. How It Relates to Tourists?</h5>
+                <p style="text-align: justify; padding-left: 30px; padding-right: 30px; padding-bottom: 20px;">
+                    Gregory Lake offers a delightful recreational experience for tourists seeking relaxation and
+                    enjoyment amidst scenic natural surroundings. Whether boating on the tranquil waters, picnicking in
+                    the lakeside parks, or simply taking in the panoramic views, visitors to Gregory Lake are sure to
+                    find moments of serenity and enjoyment. The lake's proximity to Nuwara Eliya's town center makes it
+                    a convenient stop for tourists exploring the area, and its serene ambiance provides a refreshing
+                    retreat from the hustle and bustle of city life. Additionally, Gregory Lake serves as a central hub
+                    for various recreational activities and cultural events, further enhancing its appeal to tourists
+                    seeking memorable experiences in Sri Lanka's central highlands.</p>
+                </p>
+            </div>
+            <style>
+                .gallery-container {
+                    position: relative;
+                    width: 100%;
+                    overflow: hidden;
+                    padding-left: 10px;
+                }
+
+                .gallery {
+                    display: flex;
+                    transition: transform 0.5s ease;
+                }
+
+                .gallery-item {
+                    flex: 0 0 32%;
+                    /* Each photo takes up 33.33% of container width */
+                    padding: 20px;
+                    box-sizing: border-box;
+                    position: relative;
+                    overflow: hidden;
+                    cursor: pointer;
+                    transition: transform 0.3s ease;
+                    margin-right: 20px;
+                }
+
+                .gallery-item:hover {
+                    transform: scale(1.1);
+                }
+
+
+                .photo {
+                    width: 100%;
+                    cursor: pointer;
+                }
+
+                .prev-btn,
+                .next-btn {
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    background-color: rgba(0, 0, 0, 0.5);
+                    color: white;
+                    border: none;
+                    padding: 10px;
+                    cursor: pointer;
+                }
+
+                .prev-btn {
+                    left: 0;
+                }
+
+                .next-btn {
+                    right: 0;
+                }
+            </style>
+
+            <script>
+                let currentIndex = 0;
+                const gallery = document.querySelector('.gallery');
+                const galleryItems = document.querySelectorAll('.gallery-item');
+                const numItems = galleryItems.length;
+
+                function moveGallery(direction) {
+                    currentIndex = (currentIndex + direction + numItems) % numItems;
+                    const newPosition = -currentIndex * galleryItems[0].offsetWidth;
+                    gallery.style.transform = `translateX(${newPosition}px)`;
+                }
+
+
+                function showDetails(place) {
+                    // Scroll to the description section
+                    document.getElementById(place).scrollIntoView({ behavior: 'smooth' });
+                }
+            </script>
+            <div>
+                <button id="toggleGalleryBtn5" onclick="toggleGallery5()"
+                    style="margin-left: 40px; margin-bottom: 30px;">
+                    <i class="fas fa-images"></i>
+                </button>
+
+                <div id="galleryContainer5" class="gallery-container5">
+                    <div class="gallery1">
+                        <div class="row">
+                            <div class="column">
+                                <img src="img/Gregory Lake-1.jpg" alt="Image 1">
+                            </div>
+                            <div class="column">
+                                <img src="img/Gregory Lake-2.jpg" alt="Image 2">
+                            </div>
+                            <div class="column">
+                                <img src="img/Gregory Lake-3.jpg" alt="Image 3">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="column">
+                                <img src="img/Gregory Lake-4.jpg" alt="Image 4">
+                            </div>
+                            <div class="column">
+                                <img src="img/Gregory Lake-5.jpg" alt="Image 5">
+                            </div>
+                            <div class="column">
+                                <img src="img/Gregory Lake-6.jpg" alt="Image 6">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="column">
+                                <img src="img/Gregory Lake-7.jpg" alt="Image 4">
+                            </div>
+                            <div class="column">
+                                <img src="img/Gregory Lake-8.jpg" alt="Image 5">
+                            </div>
+                            <div class="column">
+                                <img src="img/Gregory Lake-9.jpg" alt="Image 6">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <style>
+                    .gallery1 {
+                        display: flex;
+                        justify-content: center;
+                        flex-wrap: wrap;
+                        max-width: 900px;
+                        margin-left: 100px;
+                        margin-bottom: 30px;
+                    }
+
+                    .row {
+                        display: flex;
+                        justify-content: center;
+                        width: 100%;
+                    }
+
+                    .column {
+                        flex: 0 0 calc(33.33% - 20px);
+                        margin: 10px;
+                    }
+
+                    .column img {
+                        width: 100%;
+                        height: auto;
+                    }
+
+                    .gallery-container5 {
+                        display: none;
+                    }
+                </style>
+                <script>
+                    function toggleGallery5() {
+                        var galleryContainer = document.getElementById("galleryContainer5");
+                        var toggleBtn = document.getElementById("toggleGalleryBtn5");
+
+                        if (galleryContainer.style.display === "none") {
+                            galleryContainer.style.display = "block";
+                        } else {
+                            galleryContainer.style.display = "none";
+                        }
+                    }
+                </script>
+            </div>
+        </div>
+
+        <div class="container" style="border: 5px solid #7AB730; border-radius: 5dvh; margin-bottom: 30px;">
+            <div id="Knuckles Mountain Range">
+                <h2 style="padding-left: 60px; padding-top: 40px;">Knuckles Mountain Range</h2>
+                <p>
+                <h5 style="padding-left: 40px;">1. About Place?</h5>
+                <P style="text-align: justify; padding-left: 30px; padding-right: 30px;">
+                    The Knuckles Mountain Range, also known as the Knuckles Massif, is a striking mountain range located
+                    in the Central Highlands of Sri Lanka. Renowned for its scenic beauty, rich biodiversity, and unique
+                    ecosystem, the range spans across the districts of Kandy and Matale. Its rugged terrain,
+                    mist-covered peaks, cascading waterfalls, and lush forests make it a haven for nature lovers,
+                    hikers, and adventure seekers. Designated as a UNESCO World Heritage Site, the Knuckles Mountain
+                    Range is home to a diverse array of flora and fauna, including endemic species found nowhere else on
+                    Earth.</P>
+
+                <h5 style="padding-left: 40px;">2. How to Travel?</h5>
+                <p style="text-align: justify; padding-left: 30px; padding-right: 30px;">The Knuckles Mountain Range is
+                    accessible from several entry points, including the towns of Kandy, Matale, and Laggala. Travelers
+                    can reach these entry points by car, bus, or hired vehicle from major cities like Colombo, Kandy, or
+                    Dambulla. Once in the vicinity, guided hikes and treks are popular options for exploring the range,
+                    allowing visitors to navigate its rugged terrain and discover its hidden treasures.</p>
+
+                <h5 style="padding-left: 40px;">3. How Many Days Need?</h5>
+                <p style="text-align: justify; padding-left: 30px; padding-right: 30px;">Exploring the Knuckles Mountain
+                    Range typically requires a minimum of two to three days to fully appreciate its beauty and
+                    diversity. Visitors can embark on day hikes or multi-day treks, staying at eco-lodges or campsites
+                    nestled within the range. Longer stays allow for immersive experiences, including birdwatching,
+                    wildlife spotting, and interactions with local communities. The duration of the visit can vary based
+                    on the chosen activities and personal preferences.</p>
+
+                <h5 style="padding-left: 40px;">4. How Much Money Need to Spend?</h5>
+                <p style="text-align: justify; padding-left: 30px; padding-right: 30px;">The cost of visiting the
+                    Knuckles Mountain Range varies depending on factors such as accommodation, transportation, and
+                    guided activities. Budget-conscious travelers can opt for affordable guesthouses or camping
+                    facilities, while luxury travelers may choose upscale resorts or eco-lodges offering premium
+                    amenities. Additionally, expenses for guided hikes, entrance fees to protected areas, and meals
+                    should be considered. Overall, a moderate budget is sufficient to experience the beauty and
+                    adventure of the Knuckles Mountain Range.</p>
+                <ul>
+                    <li>Entrance Fee: Around $5 to $10 per person, depending on the specific trails or attractions
+                        visited.</li>
+                    <li>Transportation: Varies depending on the mode of transport and distance traveled.</li>
+                    <li>Guide Fees (Optional): ranging from $10 to $20 per person, depending on the duration and
+                        expertise provided by the guide.</li>
+                    <li>Food and Refreshments: Additional expenses for meals and refreshments if desired.</li>
+                    <li>Miscellaneous: Any additional purchases or expenses during the visit.</li>
+                </ul>
+                <p style="text-align: justify; padding-left: 30px; padding-right: 30px;">Overall, a conservative
+                    estimate for a visit to Knuckles Mountain Range could range from $20 to $40 per
+                    person, excluding transportation costs.</p>
+
+                <h5 style="padding-left: 40px;">5. How It Relates to Tourists?</h5>
+                <p style="text-align: justify; padding-left: 30px; padding-right: 30px; padding-bottom: 20px;">
+                    The Knuckles Mountain Range offers a unique and immersive experience for tourists seeking adventure,
+                    tranquility, and natural beauty. Its pristine landscapes, diverse ecosystems, and cultural heritage
+                    attract visitors from around the world. Tourists can engage in a variety of activities, including
+                    trekking along scenic trails, exploring hidden waterfalls, and encountering endemic wildlife. The
+                    range also provides opportunities for cultural interactions with local communities, offering
+                    insights into traditional lifestyles and practices. Whether seeking adrenaline-fueled adventures or
+                    serene retreats, the Knuckles Mountain Range promises unforgettable experiences for every traveler.
+                </p>
+                </p>
+            </div>
+            <style>
+                .gallery-container {
+                    position: relative;
+                    width: 100%;
+                    overflow: hidden;
+                    padding-left: 10px;
+                }
+
+                .gallery {
+                    display: flex;
+                    transition: transform 0.5s ease;
+                }
+
+                .gallery-item {
+                    flex: 0 0 32%;
+                    /* Each photo takes up 33.33% of container width */
+                    padding: 20px;
+                    box-sizing: border-box;
+                    position: relative;
+                    overflow: hidden;
+                    cursor: pointer;
+                    transition: transform 0.3s ease;
+                    margin-right: 20px;
+                }
+
+                .gallery-item:hover {
+                    transform: scale(1.1);
+                }
+
+
+                .photo {
+                    width: 100%;
+                    cursor: pointer;
+                }
+
+                .prev-btn,
+                .next-btn {
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    background-color: rgba(0, 0, 0, 0.5);
+                    color: white;
+                    border: none;
+                    padding: 10px;
+                    cursor: pointer;
+                }
+
+                .prev-btn {
+                    left: 0;
+                }
+
+                .next-btn {
+                    right: 0;
+                }
+            </style>
+
+            <script>
+                let currentIndex = 0;
+                const gallery = document.querySelector('.gallery');
+                const galleryItems = document.querySelectorAll('.gallery-item');
+                const numItems = galleryItems.length;
+
+                function moveGallery(direction) {
+                    currentIndex = (currentIndex + direction + numItems) % numItems;
+                    const newPosition = -currentIndex * galleryItems[0].offsetWidth;
+                    gallery.style.transform = `translateX(${newPosition}px)`;
+                }
+
+
+                function showDetails(place) {
+                    // Scroll to the description section
+                    document.getElementById(place).scrollIntoView({ behavior: 'smooth' });
+                }
+            </script>
+            <div>
+                <button id="toggleGalleryBtn6" onclick="toggleGallery6()"
+                    style="margin-left: 40px; margin-bottom: 30px;">
+                    <i class="fas fa-images"></i>
+                </button>
+
+                <div id="galleryContainer6" class="gallery-container6">
+                    <div class="gallery1">
+                        <div class="row">
+                            <div class="column">
+                                <img src="img/Knuckles Mountain Range-1.jpg" alt="Image 1">
+                            </div>
+                            <div class="column">
+                                <img src="img/Knuckles Mountain Range-2.jpg" alt="Image 2">
+                            </div>
+                            <div class="column">
+                                <img src="img/Knuckles Mountain Range-3.jpg" alt="Image 3">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="column">
+                                <img src="img/Knuckles Mountain Range-4.jpg" alt="Image 4">
+                            </div>
+                            <div class="column">
+                                <img src="img/Knuckles Mountain Range-5.jpg" alt="Image 5">
+                            </div>
+                            <div class="column">
+                                <img src="img/Knuckles Mountain Range-6.jpg" alt="Image 6">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="column">
+                                <img src="img/Knuckles Mountain Range-7.jpg" alt="Image 4">
+                            </div>
+                            <div class="column">
+                                <img src="img/Knuckles Mountain Range-8.jpg" alt="Image 5">
+                            </div>
+                            <div class="column">
+                                <img src="img/Knuckles Mountain Range-9.jpg" alt="Image 6">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <style>
+                    .gallery1 {
+                        display: flex;
+                        justify-content: center;
+                        flex-wrap: wrap;
+                        max-width: 900px;
+                        margin-left: 100px;
+                        margin-bottom: 30px;
+                    }
+
+                    .row {
+                        display: flex;
+                        justify-content: center;
+                        width: 100%;
+                    }
+
+                    .column {
+                        flex: 0 0 calc(33.33% - 20px);
+                        margin: 10px;
+                    }
+
+                    .column img {
+                        width: 100%;
+                        height: auto;
+                    }
+
+                    .gallery-container6 {
+                        display: none;
+                    }
+                </style>
+                <script>
+                    function toggleGallery6() {
+                        var galleryContainer = document.getElementById("galleryContainer6");
+                        var toggleBtn = document.getElementById("toggleGalleryBtn6");
+
+                        if (galleryContainer.style.display === "none") {
+                            galleryContainer.style.display = "block";
+                        } else {
+                            galleryContainer.style.display = "none";
+                        }
+                    }
+                </script>
+            </div>
+        </div>
+
+        <div class="container" style="border: 5px solid #7AB730; border-radius: 5dvh; margin-bottom: 30px;">
+            <div id="Udawattekele Sanctuary">
+                <h2 style="padding-left: 60px; padding-top: 40px;">Udawattekele Sanctuary</h2>
+                <p>
+                <h5 style="padding-left: 40px;">1. About Place?</h5>
+                <P style="text-align: justify; padding-left: 30px; padding-right: 30px;">
+                    Udawattekele Sanctuary, also known as the Royal Forest Park, is a lush green forest reserve located
+                    in the heart of Kandy, Sri Lanka. Spread over 257 acres, this sanctuary is renowned for its rich
+                    biodiversity and historical significance. Originally used as a pleasure garden by Kandyan kings, it
+                    was later declared a protected area to preserve its natural beauty and ecological importance.</P>
+
+                <h5 style="padding-left: 40px;">2. How to Travel?</h5>
+                <p style="text-align: justify; padding-left: 30px; padding-right: 30px;">Udawattekele Sanctuary is
+                    easily accessible from Kandy city center, located just a few kilometers away. Visitors can reach the
+                    sanctuary by various means of transportation, including car, tuk-tuk, or even on foot. It's a short
+                    drive or a leisurely walk from the city center to the sanctuary entrance, where the adventure into
+                    the lush greenery begins.</p>
+
+                <h5 style="padding-left: 40px;">3. How Many Days Need?</h5>
+                <p style="text-align: justify; padding-left: 30px; padding-right: 30px;">Exploring Udawattekele
+                    Sanctuary can be a half-day excursion, allowing visitors to immerse themselves in nature and explore
+                    the trails at a leisurely pace. While it's possible to cover the main attractions within a few
+                    hours, nature enthusiasts may choose to spend more time birdwatching, wildlife spotting, or simply
+                    enjoying the tranquility of the forest environment.</p>
+
+                <h5 style="padding-left: 40px;">4. How Much Money Need to Spend?</h5>
+                <p style="text-align: justify; padding-left: 30px; padding-right: 30px;">Udawattekele Sanctuary is a
+                    budget-friendly destination, with nominal entrance fees for visitors. The cost of entry is typically
+                    low, making it accessible to a wide range of travelers. Additionally, there are minimal expenses for
+                    transportation to the sanctuary, as it is conveniently located near Kandy city center. Visitors may
+                    choose to bring their own snacks and water for the excursion, further minimizing costs.</p>
+                <ul>
+                    <li>Entrance Fee: Nominal, typically ranging from $1 to $3 per person.</li>
+                    <li>Transportation: Minimal expenses for transportation to the sanctuary, depending on the mode of
+                        transport and distance traveled.</li>
+                    <li>Guide Fees (Optional): ranging from $10 to $20 per person, depending on the duration and
+                        expertise provided by the guide.</li>
+                    <li>Food and Refreshments: Additional expenses for meals and refreshments if desired.</li>
+                    <li>Miscellaneous: Any additional purchases or expenses during the visit.</li>
+                </ul>
+                <p style="text-align: justify; padding-left: 30px; padding-right: 30px;">Overall, a conservative
+                    estimate for a visit to Knuckles Mountain Range could range from $20 to $40 per
+                    person, excluding transportation costs.</p>
+
+                <h5 style="padding-left: 40px;">5. How It Relates to Tourists?</h5>
+                <p style="text-align: justify; padding-left: 30px; padding-right: 30px; padding-bottom: 20px;">
+                    Udawattekele Sanctuary offers a peaceful retreat for tourists seeking a break from the hustle and
+                    bustle of city life. Its proximity to Kandy city center makes it a convenient escape into nature,
+                    where visitors can unwind and reconnect with the natural world. Tourists often visit the sanctuary
+                    to explore its diverse flora and fauna, go birdwatching, or simply enjoy a leisurely stroll amidst
+                    the greenery. Additionally, the sanctuary's historical significance adds to its appeal, allowing
+                    tourists to delve into the rich heritage of Kandy while surrounded by pristine natural beauty.
+                </p>
+                </p>
+            </div>
+            <style>
+                .gallery-container {
+                    position: relative;
+                    width: 100%;
+                    overflow: hidden;
+                    padding-left: 10px;
+                }
+
+                .gallery {
+                    display: flex;
+                    transition: transform 0.5s ease;
+                }
+
+                .gallery-item {
+                    flex: 0 0 32%;
+                    /* Each photo takes up 33.33% of container width */
+                    padding: 20px;
+                    box-sizing: border-box;
+                    position: relative;
+                    overflow: hidden;
+                    cursor: pointer;
+                    transition: transform 0.3s ease;
+                    margin-right: 20px;
+                }
+
+                .gallery-item:hover {
+                    transform: scale(1.1);
+                }
+
+
+                .photo {
+                    width: 100%;
+                    cursor: pointer;
+                }
+
+                .prev-btn,
+                .next-btn {
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    background-color: rgba(0, 0, 0, 0.5);
+                    color: white;
+                    border: none;
+                    padding: 10px;
+                    cursor: pointer;
+                }
+
+                .prev-btn {
+                    left: 0;
+                }
+
+                .next-btn {
+                    right: 0;
+                }
+            </style>
+
+            <script>
+                let currentIndex = 0;
+                const gallery = document.querySelector('.gallery');
+                const galleryItems = document.querySelectorAll('.gallery-item');
+                const numItems = galleryItems.length;
+
+                function moveGallery(direction) {
+                    currentIndex = (currentIndex + direction + numItems) % numItems;
+                    const newPosition = -currentIndex * galleryItems[0].offsetWidth;
+                    gallery.style.transform = `translateX(${newPosition}px)`;
+                }
+
+
+                function showDetails(place) {
+                    // Scroll to the description section
+                    document.getElementById(place).scrollIntoView({ behavior: 'smooth' });
+                }
+            </script>
+            <div>
+                <button id="toggleGalleryBtn7" onclick="toggleGallery7()"
+                    style="margin-left: 40px; margin-bottom: 30px;">
+                    <i class="fas fa-images"></i>
+                </button>
+
+                <div id="galleryContainer7" class="gallery-container7">
+                    <div class="gallery1">
+                        <div class="row">
+                            <div class="column">
+                                <img src="img/Udawattekele Sanctuary-1.jpg" alt="Image 1">
+                            </div>
+                            <div class="column">
+                                <img src="img/Udawattekele Sanctuary-2.jpg" alt="Image 2">
+                            </div>
+                            <div class="column">
+                                <img src="img/Udawattekele Sanctuary-3.jpg" alt="Image 3">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="column">
+                                <img src="img/Udawattekele Sanctuary-4.jpg" alt="Image 4">
+                            </div>
+                            <div class="column">
+                                <img src="img/Udawattekele Sanctuary-5.jpg" alt="Image 5">
+                            </div>
+                            <div class="column">
+                                <img src="img/Udawattekele Sanctuary-6.jpg" alt="Image 6">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="column">
+                                <img src="img/Udawattekele Sanctuary-7.jpg" alt="Image 4">
+                            </div>
+                            <div class="column">
+                                <img src="img/Udawattekele Sanctuary-8.jpg" alt="Image 5">
+                            </div>
+                            <div class="column">
+                                <img src="img/Udawattekele Sanctuary-9.jpg" alt="Image 6">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <style>
+                    .gallery1 {
+                        display: flex;
+                        justify-content: center;
+                        flex-wrap: wrap;
+                        max-width: 900px;
+                        margin-left: 100px;
+                        margin-bottom: 30px;
+                    }
+
+                    .row {
+                        display: flex;
+                        justify-content: center;
+                        width: 100%;
+                    }
+
+                    .column {
+                        flex: 0 0 calc(33.33% - 20px);
+                        margin: 10px;
+                    }
+
+                    .column img {
+                        width: 100%;
+                        height: auto;
+                    }
+
+                    .gallery-container7 {
+                        display: none;
+                    }
+                </style>
+                <script>
+                    function toggleGallery7() {
+                        var galleryContainer = document.getElementById("galleryContainer7");
+                        var toggleBtn = document.getElementById("toggleGalleryBtn7");
+
+                        if (galleryContainer.style.display === "none") {
+                            galleryContainer.style.display = "block";
+                        } else {
+                            galleryContainer.style.display = "none";
+                        }
+                    }
+                </script>
+            </div>
+        </div>
+
+        <div class="container" style="border: 5px solid #7AB730; border-radius: 5dvh; margin-bottom: 30px;">
+            <div id="Ambuluwawa Tower">
+                <h2 style="padding-left: 60px; padding-top: 40px;">Ambuluwawa Tower</h2>
+                <p>
+                <h5 style="padding-left: 40px;">1. About Place?</h5>
+                <P style="text-align: justify; padding-left: 30px; padding-right: 30px;">
+                    Ambuluwawa Tower is a unique architectural marvel located in the hilltop sanctuary of Ambuluwawa in
+                    Gampola, Sri Lanka. Rising 48 meters above the sanctuary, this tower is a symbol of unity and
+                    harmony, featuring a blend of architectural styles inspired by various religious and cultural
+                    traditions. The tower serves as a viewpoint, offering panoramic vistas of the surrounding
+                    landscapes, including lush greenery, mist-covered mountains, and picturesque valleys.</P>
+
+                <h5 style="padding-left: 40px;">2. How to Travel?</h5>
+                <p style="text-align: justify; padding-left: 30px; padding-right: 30px;">Ambuluwawa Tower is accessible
+                    from the town of Gampola, located in the Kandy District of Sri Lanka. Visitors can reach Gampola by
+                    bus, train, or private vehicle from major cities like Colombo or Kandy. From Gampola, it's a short
+                    drive or hike to the Ambuluwawa Sanctuary, where the tower is situated. The sanctuary's serene
+                    ambiance and lush surroundings make the journey to the tower a memorable experience in itself.</p>
+
+                <h5 style="padding-left: 40px;">3. How Many Days Need?</h5>
+                <p style="text-align: justify; padding-left: 30px; padding-right: 30px;">A visit to Ambuluwawa Tower can
+                    typically be completed within a few hours, allowing visitors to explore the sanctuary and ascend the
+                    tower to enjoy the breathtaking views. However, nature enthusiasts and photography enthusiasts may
+                    choose to spend additional time exploring the sanctuary's extensive grounds, which include botanical
+                    gardens, walking trails, and meditation areas. Depending on individual preferences, a half-day
+                    excursion is usually sufficient to appreciate the beauty and tranquility of Ambuluwawa.</p>
+
+                <h5 style="padding-left: 40px;">4. How Much Money Need to Spend?</h5>
+                <p style="text-align: justify; padding-left: 30px; padding-right: 30px;">A visit to Ambuluwawa Tower can
+                    typically be completed within a few hours, allowing visitors to explore the sanctuary and ascend the
+                    tower to enjoy the breathtaking views. However, nature enthusiasts and photography enthusiasts may
+                    choose to spend additional time exploring the sanctuary's extensive grounds, which include botanical
+                    gardens, walking trails, and meditation areas. Depending on individual preferences, a half-day
+                    excursion is usually sufficient to appreciate the beauty and tranquility of Ambuluwawa.</p>
+                <ul>
+                    <li>Entrance Fee: Nominal, typically ranging from $1 to $3 per person.</li>
+                    <li>Transportation: Minimal expenses for transportation to the sanctuary, depending on the mode of
+                        transport and distance traveled.</li>
+                    <li>Guide Fees (Optional): ranging from $10 to $20 per person, depending on the duration and
+                        expertise provided by the guide.</li>
+                    <li>Food and Refreshments: Additional expenses for meals and refreshments if desired.</li>
+                    <li>Miscellaneous: Any additional purchases or expenses during the visit.</li>
+                </ul>
+                <p style="text-align: justify; padding-left: 30px; padding-right: 30px;">Overall, a conservative
+                    estimate for a visit to Knuckles Mountain Range could range from $20 to $40 per
+                    person, excluding transportation costs.</p>
+
+                <h5 style="padding-left: 40px;">5. How It Relates to Tourists?</h5>
+                <p style="text-align: justify; padding-left: 30px; padding-right: 30px; padding-bottom: 20px;">
+                    Ambuluwawa Tower is a popular tourist attraction in Sri Lanka, attracting visitors from all over the
+                    world with its unique architecture and stunning views. Tourists often visit the tower to capture
+                    panoramic photographs, enjoy a peaceful retreat amidst nature, and marvel at the sanctuary's
+                    cultural and religious significance. The tower's elevated position offers unparalleled vistas of the
+                    surrounding landscapes, providing a memorable experience for tourists seeking adventure, relaxation,
+                    and spiritual rejuvenation.
+                </p>
+                </p>
+            </div>
+            <style>
+                .gallery-container {
+                    position: relative;
+                    width: 100%;
+                    overflow: hidden;
+                    padding-left: 10px;
+                }
+
+                .gallery {
+                    display: flex;
+                    transition: transform 0.5s ease;
+                }
+
+                .gallery-item {
+                    flex: 0 0 32%;
+                    /* Each photo takes up 33.33% of container width */
+                    padding: 20px;
+                    box-sizing: border-box;
+                    position: relative;
+                    overflow: hidden;
+                    cursor: pointer;
+                    transition: transform 0.3s ease;
+                    margin-right: 20px;
+                }
+
+                .gallery-item:hover {
+                    transform: scale(1.1);
+                }
+
+
+                .photo {
+                    width: 100%;
+                    cursor: pointer;
+                }
+
+                .prev-btn,
+                .next-btn {
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    background-color: rgba(0, 0, 0, 0.5);
+                    color: white;
+                    border: none;
+                    padding: 10px;
+                    cursor: pointer;
+                }
+
+                .prev-btn {
+                    left: 0;
+                }
+
+                .next-btn {
+                    right: 0;
+                }
+            </style>
+
+            <script>
+                let currentIndex = 0;
+                const gallery = document.querySelector('.gallery');
+                const galleryItems = document.querySelectorAll('.gallery-item');
+                const numItems = galleryItems.length;
+
+                function moveGallery(direction) {
+                    currentIndex = (currentIndex + direction + numItems) % numItems;
+                    const newPosition = -currentIndex * galleryItems[0].offsetWidth;
+                    gallery.style.transform = `translateX(${newPosition}px)`;
+                }
+
+
+                function showDetails(place) {
+                    // Scroll to the description section
+                    document.getElementById(place).scrollIntoView({ behavior: 'smooth' });
+                }
+            </script>
+            <div>
+                <button id="toggleGalleryBtn8" onclick="toggleGallery8()"
+                    style="margin-left: 40px; margin-bottom: 30px;">
+                    <i class="fas fa-images"></i>
+                </button>
+
+                <div id="galleryContainer8" class="gallery-container8">
+                    <div class="gallery1">
+                        <div class="row">
+                            <div class="column">
+                                <img src="img/Ambuluwawa Tower-1.jpg" alt="Image 1">
+                            </div>
+                            <div class="column">
+                                <img src="img/Ambuluwawa Tower-2.jpg" alt="Image 2">
+                            </div>
+                            <div class="column">
+                                <img src="img/Ambuluwawa Tower-3.jpg" alt="Image 3">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="column">
+                                <img src="img/Ambuluwawa Tower-4.jpg" alt="Image 4">
+                            </div>
+                            <div class="column">
+                                <img src="img/Ambuluwawa Tower-5.jpg" alt="Image 5">
+                            </div>
+                            <div class="column">
+                                <img src="img/Ambuluwawa Tower-6.jpg" alt="Image 6">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="column">
+                                <img src="img/Ambuluwawa Tower-7.jpg" alt="Image 4">
+                            </div>
+                            <div class="column">
+                                <img src="img/Ambuluwawa Tower-8.jpg" alt="Image 5">
+                            </div>
+                            <div class="column">
+                                <img src="img/Ambuluwawa Tower-9.jpg" alt="Image 6">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <style>
+                    .gallery1 {
+                        display: flex;
+                        justify-content: center;
+                        flex-wrap: wrap;
+                        max-width: 900px;
+                        margin-left: 100px;
+                        margin-bottom: 30px;
+                    }
+
+                    .row {
+                        display: flex;
+                        justify-content: center;
+                        width: 100%;
+                    }
+
+                    .column {
+                        flex: 0 0 calc(33.33% - 20px);
+                        margin: 10px;
+                    }
+
+                    .column img {
+                        width: 100%;
+                        height: auto;
+                    }
+
+                    .gallery-container8 {
+                        display: none;
+                    }
+                </style>
+                <script>
+                    function toggleGallery8() {
+                        var galleryContainer = document.getElementById("galleryContainer8");
+                        var toggleBtn = document.getElementById("toggleGalleryBtn8");
+
+                        if (galleryContainer.style.display === "none") {
+                            galleryContainer.style.display = "block";
+                        } else {
+                            galleryContainer.style.display = "none";
+                        }
+                    }
+                </script>
+            </div>
+        </div>
+
+        <div class="container" style="border: 5px solid #7AB730; border-radius: 5dvh; margin-bottom: 30px;">
+            <div id="Bomburu ella waterfalls">
+                <h2 style="padding-left: 60px; padding-top: 40px;">Bomburu ella waterfalls</h2>
+                <p>
+                <h5 style="padding-left: 40px;">1. About Place?</h5>
+                <P style="text-align: justify; padding-left: 30px; padding-right: 30px;">
+                    Bomburu Ella Waterfalls is a breathtaking natural attraction situated in the hill country of Sri
+                    Lanka, near the town of Nuwara Eliya. Cascading from a height of approximately 100 meters, this
+                    picturesque waterfall is surrounded by dense forests, tea plantations, and scenic landscapes. The
+                    name "Bomburu Ella" translates to "Bumble Bee Waterfalls" in the local Sinhala language, possibly
+                    derived from the buzzing sound of the falls or the abundance of bees in the area.</P>
+
+                <h5 style="padding-left: 40px;">2. How to Travel?</h5>
+                <p style="text-align: justify; padding-left: 30px; padding-right: 30px;">Bomburu Ella Waterfalls can be
+                    reached from Nuwara Eliya, a popular tourist destination in the central highlands of Sri Lanka.
+                    Visitors can travel to Nuwara Eliya by bus, train, or private vehicle from major cities like Colombo
+                    or Kandy. From Nuwara Eliya, it's a scenic drive or a short hike to reach the entrance of the
+                    waterfall area. The journey offers panoramic views of tea estates, rolling hills, and lush greenery,
+                    making it a delightful experience for travelers.</p>
+
+                <h5 style="padding-left: 40px;">3. How Many Days Need?</h5>
+                <p style="text-align: justify; padding-left: 30px; padding-right: 30px;">A visit to Bomburu Ella
+                    Waterfalls can be completed within a few hours, allowing visitors to admire the natural beauty of
+                    the cascading waters and the surrounding landscapes. However, nature enthusiasts and photographers
+                    may choose to spend additional time exploring the area, taking leisurely walks along the trails, and
+                    immersing themselves in the tranquility of the forested surroundings. Depending on individual
+                    preferences, a half-day excursion is usually sufficient to enjoy the splendor of Bomburu Ella.</p>
+
+                <h5 style="padding-left: 40px;">4. How Much Money Need to Spend?</h5>
+                <p style="text-align: justify; padding-left: 30px; padding-right: 30px;">The cost of visiting Bomburu
+                    Ella Waterfalls is relatively low, with nominal entrance fees for access to the viewing areas.
+                    Additionally, transportation expenses to Nuwara Eliya and the waterfall site are affordable, making
+                    it accessible to budget-conscious travelers. Visitors may choose to bring their own snacks and water
+                    for the excursion or purchase refreshments from vendors near the waterfall entrance. Overall, a
+                    visit to Bomburu Ella offers excellent value for money, allowing travelers to experience the beauty
+                    of nature without significant financial outlay.</p>
+                <ul>
+                    <li>Entrance Fee: Nominal, typically ranging from $1 to $3 per person.</li>
+                    <li>Transportation: Affordable expenses for transportation to Nuwara Eliya and the waterfall site,
+                        depending on the mode of transport and distance traveled.</li>
+                    <li>Guide Fees (Optional): ranging from $10 to $20 per person, depending on the duration and
+                        expertise provided by the guide.</li>
+                    <li>Food and Refreshments: Additional expenses for meals and refreshments if desired.</li>
+                    <li>Miscellaneous: Any additional purchases or expenses during the visit.</li>
+                </ul>
+                <p style="text-align: justify; padding-left: 30px; padding-right: 30px;">Overall, a conservative
+                    estimate for a visit to Knuckles Mountain Range could range from $20 to $40 per
+                    person, excluding transportation costs.</p>
+
+                <h5 style="padding-left: 40px;">5. How It Relates to Tourists?</h5>
+                <p style="text-align: justify; padding-left: 30px; padding-right: 30px; padding-bottom: 20px;">
+                    Bomburu Ella Waterfalls is a popular tourist attraction in Sri Lanka, known for its stunning natural
+                    beauty and serene ambiance. Tourists often visit the falls to witness the mesmerizing sight of water
+                    cascading down the rocky cliffs, surrounded by verdant forests and misty hills. The tranquil
+                    atmosphere and picturesque surroundings make Bomburu Ella an ideal destination for nature lovers,
+                    hikers, and photography enthusiasts. Visitors can enjoy leisurely walks along the trails, listen to
+                    the soothing sound of cascading water, and immerse themselves in the tranquility of the pristine
+                    wilderness.
+                </p>
+            </div>
+            <style>
+                .gallery-container {
+                    position: relative;
+                    width: 100%;
+                    overflow: hidden;
+                    padding-left: 10px;
+                }
+
+                .gallery {
+                    display: flex;
+                    transition: transform 0.5s ease;
+                }
+
+                .gallery-item {
+                    flex: 0 0 32%;
+                    /* Each photo takes up 33.33% of container width */
+                    padding: 20px;
+                    box-sizing: border-box;
+                    position: relative;
+                    overflow: hidden;
+                    cursor: pointer;
+                    transition: transform 0.3s ease;
+                    margin-right: 20px;
+                }
+
+                .gallery-item:hover {
+                    transform: scale(1.1);
+                }
+
+
+                .photo {
+                    width: 100%;
+                    cursor: pointer;
+                }
+
+                .prev-btn,
+                .next-btn {
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    background-color: rgba(0, 0, 0, 0.5);
+                    color: white;
+                    border: none;
+                    padding: 10px;
+                    cursor: pointer;
+                }
+
+                .prev-btn {
+                    left: 0;
+                }
+
+                .next-btn {
+                    right: 0;
+                }
+            </style>
+
+            <script>
+                let currentIndex = 0;
+                const gallery = document.querySelector('.gallery');
+                const galleryItems = document.querySelectorAll('.gallery-item');
+                const numItems = galleryItems.length;
+
+                function moveGallery(direction) {
+                    currentIndex = (currentIndex + direction + numItems) % numItems;
+                    const newPosition = -currentIndex * galleryItems[0].offsetWidth;
+                    gallery.style.transform = `translateX(${newPosition}px)`;
+                }
+
+
+                function showDetails(place) {
+                    // Scroll to the description section
+                    document.getElementById(place).scrollIntoView({ behavior: 'smooth' });
+                }
+            </script>
+            <div>
+                <button id="toggleGalleryBtn9" onclick="toggleGallery9()"
+                    style="margin-left: 40px; margin-bottom: 30px;">
+                    <i class="fas fa-images"></i>
+                </button>
+
+                <div id="galleryContainer9" class="gallery-container9">
+                    <div class="gallery1">
+                        <div class="row">
+                            <div class="column">
+                                <img src="img/Bomburu ella waterfalls-1.jpg" alt="Image 1">
+                            </div>
+                            <div class="column">
+                                <img src="img/Bomburu ella waterfalls-2.jpg" alt="Image 2">
+                            </div>
+                            <div class="column">
+                                <img src="img/Bomburu ella waterfalls-3.jpg" alt="Image 3">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="column">
+                                <img src="img/Bomburu ella waterfalls-4.jpg" alt="Image 4">
+                            </div>
+                            <div class="column">
+                                <img src="img/Bomburu ella waterfalls-5.jpg" alt="Image 5">
+                            </div>
+                            <div class="column">
+                                <img src="img/Bomburu ella waterfalls-6.jpg" alt="Image 6">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="column">
+                                <img src="img/Bomburu ella waterfalls-7.jpg" alt="Image 4">
+                            </div>
+                            <div class="column">
+                                <img src="img/Bomburu ella waterfalls-8.jpg" alt="Image 5">
+                            </div>
+                            <div class="column">
+                                <img src="img/Bomburu ella waterfalls-9.jpg" alt="Image 6">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <style>
+                    .gallery1 {
+                        display: flex;
+                        justify-content: center;
+                        flex-wrap: wrap;
+                        max-width: 900px;
+                        margin-left: 100px;
+                        margin-bottom: 30px;
+                    }
+
+                    .row {
+                        display: flex;
+                        justify-content: center;
+                        width: 100%;
+                    }
+
+                    .column {
+                        flex: 0 0 calc(33.33% - 20px);
+                        margin: 10px;
+                    }
+
+                    .column img {
+                        width: 100%;
+                        height: auto;
+                    }
+
+                    .gallery-container9 {
+                        display: none;
+                    }
+                </style>
+                <script>
+                    function toggleGallery9() {
+                        var galleryContainer = document.getElementById("galleryContainer9");
+                        var toggleBtn = document.getElementById("toggleGalleryBtn9");
+
+                        if (galleryContainer.style.display === "none") {
+                            galleryContainer.style.display = "block";
+                        } else {
+                            galleryContainer.style.display = "none";
+                        }
+                    }
+                </script>
+            </div>
+        </div>
+
+        <div class="container" style="border: 5px solid #7AB730; border-radius: 5dvh; margin-bottom: 30px;">
+            <div id="Aluviharaya rock cave temple">
+                <h2 style="padding-left: 60px; padding-top: 40px;">Aluviharaya rock cave temple</h2>
+                <p>
+                <h5 style="padding-left: 40px;">1. About Place?</h5>
+                <P style="text-align: justify; padding-left: 30px; padding-right: 30px;">
+                    Aluviharaya Rock Cave Temple is a significant Buddhist monastery and archaeological site located
+                    near Matale in Sri Lanka. Carved into the natural rock formations, the temple complex consists of a
+                    series of caves that served as meditation chambers and living quarters for Buddhist monks. It is
+                    renowned for its historical importance and spiritual significance, dating back to ancient times. The
+                    temple's serene ambiance, intricate cave carvings, and religious relics attract visitors interested
+                    in Buddhism, history, and archaeology.</P>
+
+                <h5 style="padding-left: 40px;">2. How to Travel?</h5>
+                <p style="text-align: justify; padding-left: 30px; padding-right: 30px;">Aluviharaya Rock Cave Temple is
+                    accessible from Matale town, which serves as a gateway to the temple site. Visitors can travel to
+                    Matale by bus, train, or private vehicle from major cities like Colombo or Kandy. From Matale, it's
+                    a short drive or tuk-tuk ride to reach the entrance of the temple complex. The journey offers scenic
+                    views of the surrounding countryside and provides insights into the cultural heritage of the region.
+                </p>
+
+                <h5 style="padding-left: 40px;">3. How Many Days Need?</h5>
+                <p style="text-align: justify; padding-left: 30px; padding-right: 30px;">A visit to Aluviharaya Rock
+                    Cave Temple can typically be completed within a few hours, allowing visitors to explore the caves,
+                    admire the ancient carvings, and pay homage to the sacred relics. However, history enthusiasts and
+                    spiritual seekers may choose to spend additional time immersing themselves in the tranquility of the
+                    temple surroundings, participating in religious rituals, and learning about the monastery's rich
+                    history. Depending on individual interests, a half-day excursion is usually sufficient to appreciate
+                    the cultural and spiritual significance of Aluviharaya.</p>
+
+                <h5 style="padding-left: 40px;">4. How Much Money Need to Spend?</h5>
+                <p style="text-align: justify; padding-left: 30px; padding-right: 30px;">The cost of visiting
+                    Aluviharaya Rock Cave Temple is minimal, primarily consisting of nominal entrance fees and optional
+                    donations to support the maintenance of the temple complex. Entrance fees are typically modest,
+                    making the temple accessible to visitors of all budgets. Additionally, transportation expenses to
+                    Matale and the temple site are affordable, allowing travelers to explore the area without
+                    significant financial outlay. Visitors may choose to bring their own snacks or purchase refreshments
+                    from vendors near the temple entrance.</p>
+                <ul>
+                    <li>Entrance Fee: Nominal, typically ranging from $1 to $3 per person.</li>
+                    <li>Transportation: Affordable expenses for transportation to Matale and the temple site, depending
+                        on the mode of transport and distance traveled.</li>
+                    <li>Guide Fees (Optional): ranging from $10 to $20 per person, depending on the duration and
+                        expertise provided by the guide.</li>
+                    <li>Food and Refreshments: Additional expenses for meals and refreshments if desired.</li>
+                    <li>Miscellaneous: Any additional purchases or expenses during the visit.</li>
+                </ul>
+                <p style="text-align: justify; padding-left: 30px; padding-right: 30px;">Overall, a conservative
+                    estimate for a visit to Knuckles Mountain Range could range from $20 to $40 per
+                    person, excluding transportation costs.</p>
+
+                <h5 style="padding-left: 40px;">5. How It Relates to Tourists?</h5>
+                <p style="text-align: justify; padding-left: 30px; padding-right: 30px; padding-bottom: 20px;">
+                    Aluviharaya Rock Cave Temple holds great significance for tourists interested in Buddhist culture,
+                    history, and architecture. The temple's ancient caves, adorned with intricate carvings and
+                    paintings, offer a glimpse into Sri Lanka's rich religious heritage. Tourists often visit the temple
+                    to marvel at the craftsmanship of the ancient artisans, explore the meditation chambers used by
+                    Buddhist monks, and gain insights into Buddhist teachings and practices. The serene ambiance of the
+                    temple complex provides a peaceful retreat for meditation and reflection, attracting visitors
+                    seeking spiritual renewal and cultural immersion.
+                </p>
+            </div>
+            <style>
+                .gallery-container {
+                    position: relative;
+                    width: 100%;
+                    overflow: hidden;
+                    padding-left: 10px;
+                }
+
+                .gallery {
+                    display: flex;
+                    transition: transform 0.5s ease;
+                }
+
+                .gallery-item {
+                    flex: 0 0 32%;
+                    /* Each photo takes up 33.33% of container width */
+                    padding: 20px;
+                    box-sizing: border-box;
+                    position: relative;
+                    overflow: hidden;
+                    cursor: pointer;
+                    transition: transform 0.3s ease;
+                    margin-right: 20px;
+                }
+
+                .gallery-item:hover {
+                    transform: scale(1.1);
+                }
+
+
+                .photo {
+                    width: 100%;
+                    cursor: pointer;
+                }
+
+                .prev-btn,
+                .next-btn {
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    background-color: rgba(0, 0, 0, 0.5);
+                    color: white;
+                    border: none;
+                    padding: 10px;
+                    cursor: pointer;
+                }
+
+                .prev-btn {
+                    left: 0;
+                }
+
+                .next-btn {
+                    right: 0;
+                }
+            </style>
+
+            <script>
+                let currentIndex = 0;
+                const gallery = document.querySelector('.gallery');
+                const galleryItems = document.querySelectorAll('.gallery-item');
+                const numItems = galleryItems.length;
+
+                function moveGallery(direction) {
+                    currentIndex = (currentIndex + direction + numItems) % numItems;
+                    const newPosition = -currentIndex * galleryItems[0].offsetWidth;
+                    gallery.style.transform = `translateX(${newPosition}px)`;
+                }
+
+
+                function showDetails(place) {
+                    // Scroll to the description section
+                    document.getElementById(place).scrollIntoView({ behavior: 'smooth' });
+                }
+            </script>
+            <div>
+                <button id="toggleGalleryBtn11" onclick="toggleGallery11()"
+                    style="margin-left: 40px; margin-bottom: 30px;">
+                    <i class="fas fa-images"></i>
+                </button>
+
+                <div id="galleryContainer11" class="gallery-container11">
+                    <div class="gallery1">
+                        <div class="row">
+                            <div class="column">
+                                <img src="img/Aluviharaya rock cave temple-1.jpg" alt="Image 1">
+                            </div>
+                            <div class="column">
+                                <img src="img/Aluviharaya rock cave temple-2.jpg" alt="Image 2">
+                            </div>
+                            <div class="column">
+                                <img src="img/Aluviharaya rock cave temple-3.jpg" alt="Image 3">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="column">
+                                <img src="img/Aluviharaya rock cave temple-4.jpg" alt="Image 4">
+                            </div>
+                            <div class="column">
+                                <img src="img/Aluviharaya rock cave temple-5.jpg" alt="Image 5">
+                            </div>
+                            <div class="column">
+                                <img src="img/Aluviharaya rock cave temple-6.jpg" alt="Image 6">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="column">
+                                <img src="img/Aluviharaya rock cave temple-7.jpg" alt="Image 4">
+                            </div>
+                            <div class="column">
+                                <img src="img/Aluviharaya rock cave temple-8.jpg" alt="Image 5">
+                            </div>
+                            <div class="column">
+                                <img src="img/Aluviharaya rock cave temple-9.jpg" alt="Image 6">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <style>
+                    .gallery1 {
+                        display: flex;
+                        justify-content: center;
+                        flex-wrap: wrap;
+                        max-width: 900px;
+                        margin-left: 100px;
+                        margin-bottom: 30px;
+                    }
+
+                    .row {
+                        display: flex;
+                        justify-content: center;
+                        width: 100%;
+                    }
+
+                    .column {
+                        flex: 0 0 calc(33.33% - 20px);
+                        margin: 10px;
+                    }
+
+                    .column img {
+                        width: 100%;
+                        height: auto;
+                    }
+
+                    .gallery-container11 {
+                        display: none;
+                    }
+                </style>
+                <script>
+                    function toggleGallery11() {
+                        var galleryContainer = document.getElementById("galleryContainer11");
+                        var toggleBtn = document.getElementById("toggleGalleryBtn10");
+
+                        if (galleryContainer.style.display === "none") {
+                            galleryContainer.style.display = "block";
+                        } else {
+                            galleryContainer.style.display = "none";
+                        }
+                    }
+                </script>
+            </div>
+        </div>
+        <!-- Destination Details Ending Point -->
+
+        <!-- Footer Starting Point -->
+        <div class="container-fluid bg-dark text-white-50 py-5 px-sm-3 px-lg-5" style="margin-top: 90px;">
+            <div class="row pt-5">
+                <div class="col-lg-3 col-md-6 mb-5">
+                    <a href="" class="navbar-brand">
+                        <h1 class="text-primary"><span class="text-white">Explor</span>Express</h1>
+                    </a>
+                    <p style="text-align: justify;">"Your passport to seamless adventures. Effortlessly plan and
+                        navigate
+                        your journeys
+                        with our intuitive platform. Discover, plan, and experience the world like never before. Start
+                        exploring today!"</p>
+                    <h6 class="text-white text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">Follow Us</h6>
+                    <div class="d-flex justify-content-start">
+                        <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-primary btn-square mr-2" href="#"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-primary btn-square mr-2" href="#"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-outline-primary btn-square" href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-5">
+                    <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Our Services</h5>
+                    <div class="d-flex flex-column justify-content-start">
+                        <a class="text-white-50 mb-2" href="about.html"><i class="fa fa-angle-right mr-2"></i>About</a>
+                        <a class="text-white-50 mb-2" href="destination.html"><i
+                                class="fa fa-angle-right mr-2"></i>Destination</a>
+                        <a class="text-white-50 mb-2" href="service.html"><i
+                                class="fa fa-angle-right mr-2"></i>Services</a>
+                        <a class="text-white-50 mb-2" href="package.html"><i
+                                class="fa fa-angle-right mr-2"></i>Packages</a>
+                        <a class="text-white-50 mb-2" href="guide.html"><i class="fa fa-angle-right mr-2"></i>Guides</a>
+                        <a class="text-white-50" href="#"><i class="fa fa-angle-right mr-2"></i>Blog</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-5">
+                    <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Usefull Links</h5>
+                    <div class="d-flex flex-column justify-content-start">
+                        <a class="text-white-50 mb-2" href="about.html"><i class="fa fa-angle-right mr-2"></i>About</a>
+                        <a class="text-white-50 mb-2" href="destination.html"><i
+                                class="fa fa-angle-right mr-2"></i>Destination</a>
+                        <a class="text-white-50 mb-2" href="service.html"><i
+                                class="fa fa-angle-right mr-2"></i>Services</a>
+                        <a class="text-white-50 mb-2" href="package.html"><i
+                                class="fa fa-angle-right mr-2"></i>Packages</a>
+                        <a class="text-white-50 mb-2" href="guide.html"><i class="fa fa-angle-right mr-2"></i>Guides</a>
+                        <a class="text-white-50" href="#"><i class="fa fa-angle-right mr-2"></i>Blog</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-5">
+                    <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Contact Us</h5>
+                    <p><i class="fa fa-map-marker-alt mr-2"></i>123 Main Street, Colombo 5, Sri Lanka</p>
+                    <p><i class="fa fa-phone-alt mr-2"></i>+94 762076399</p>
+                    <p><i class="fa fa-envelope mr-2"></i>ExplorExpress@gmail.com</p>
+                    <h6 class="text-white text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">Connect</h6>
+                    <div class="w-100">
+                        <div class="input-group">
+                            <div class="input-group-append">
+                                <button class="btn btn-primary px-3">Email</button>
+                            </div>
+                            <div class="input-group-append" style="margin-left: 20px;">
+                                <button class="btn btn-primary px-3">WhatsApp</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid bg-dark text-white border-top py-4 px-sm-3 px-md-5"
+                style="border-color: rgba(256, 256, 256, .1) !important;">
+                <div class="row">
+                    <div class="col-lg-6 text-center text-md-left mb-3 mb-md-0">
+                        <p class="m-0 text-white-50">SE4106_Project in Web System & Technology</p>
+                    </div>
+                    <div class="col-lg-6 text-center text-md-right">
+                        <p class="m-0 text-white-50">Designed by <a></a> GROUP_09 </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer Ending Point -->
+
+
+            <!-- Back to Top -->
+            <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i
+                    class="fa fa-angle-double-up"></i></a>
+
+            <!-- DarkMode and Light mode -->
+            <script>
+                function toggleDarkMode() {
+                    const body = document.body;
+                    const lightIcon = document.getElementById('lightIcon');
+                    const darkIcon = document.getElementById('darkIcon');
+
+                    body.classList.toggle('dark-mode');
+                    const isDarkMode = body.classList.contains('dark-mode');
+
+                    // Toggle visibility of icons based on dark mode status
+                    lightIcon.style.display = isDarkMode ? 'none' : 'inline-block';
+                    darkIcon.style.display = isDarkMode ? 'inline-block' : 'none';
+
+                    localStorage.setItem('darkMode', isDarkMode);
+                }
+
+                // Check for the user's preference in localStorage on page load
+                document.addEventListener('DOMContentLoaded', function () {
+                    const savedDarkMode = localStorage.getItem('darkMode');
+                    const lightIcon = document.getElementById('lightIcon');
+                    const darkIcon = document.getElementById('darkIcon');
+
+                    if (savedDarkMode === 'true') {
+                        document.body.classList.add('dark-mode');
+                        lightIcon.style.display = 'none';
+                        darkIcon.style.display = 'inline-block';
+                    }
+                });
+            </script>
+
+            <!-- JavaScript Libraries -->
+            <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+            <script src="lib/easing/easing.min.js"></script>
+            <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+            <script src="lib/tempusdominus/js/moment.min.js"></script>
+            <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+            <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+            <!-- Contact Javascript File -->
+            <script src="mail/jqBootstrapValidation.min.js"></script>
+            <script src="mail/contact.js"></script>
+
+            <!-- Template Javascript -->
+            <script src="js/main.js"></script>
+    </body>
+
+</html>
