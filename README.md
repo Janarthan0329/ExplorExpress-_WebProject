@@ -73,5 +73,3 @@ Watch the demonstration video below to see how ExplorExpress works:
 [![Watch the Video](https://img.youtube.com/vi/qxbSJNwitYk/0.jpg)](https://www.youtube.com/watch?v=qxbSJNwitYk)  
 
 Click the thumbnail or [here](https://www.youtube.com/watch?v=qxbSJNwitYk) to view the video on YouTube.  
-
-```  
